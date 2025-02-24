@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Deals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .price {
+            font-size: 18px;
+            color: #e60000;
+            font-weight: bold;
+        }
+        .price a {
+            text-decoration: none;
+            color: #e60000;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 14px;
+        }
+        .contact {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .contact a {
+            color: #1da1f2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <span>Exclusive Deals</span>
+    <span style="float:right; margin-right: 20px;">
+        <a href="https://www.snapchat.com/add/YOUR_SNAPCHAT" style="color: white; text-decoration: none;">Contact Us</a>
+    </span>
+</header>
+
+<div class="product-container">
+    <!-- AirPods -->
+    <div class="product">
+        <img src="your_airpods_image_url.jpg" alt="AirPods">
+        <p>AirPods</p>
+        <p class="price">
+            <a href="https://www.paypal.com/pay?amount=12.99">12,99€</a>
+            <span class="original-price">24,99€</span>
+        </p>
+    </div>
+
+    <!-- LV Beanie -->
+    <div class="product">
+        <img src="your_lv_beanie_image_url.jpg" alt="LV Beanie">
+        <p>Louis Vuitton Beanie</p>
+        <p class="price">
+            <a href="https://www.paypal.com/pay?amount=12.99">12,99€</a>
+            <span class="original-price">24,99€</span>
+        </p>
+    </div>
+
+    <!-- Burberry Jackets/Vests -->
+    <div class="product">
+        <img src="your_burberry_jacket_image_url.jpg" alt="Burberry Jacket">
+        <p>Burberry Jacket/Vest</p>
+        <p class="price">
+            <a href="https://www.paypal.com/pay?amount=14.99">14,99€</a>
+            <span class="original-price">26,99€</span>
+        </p>
+    </div>
+
+    <!-- 1:1 Shoes -->
+    <div class="product">
+        <img src="your_shoes_image_url.jpg" alt="1:1 Shoes">
+        <p>Replica Shoes (1:1)</p>
+        <p class="price">
+            <a href="https://www.paypal.com/pay?amount=20.99">20,99€</a>
+            <span class="original-price">29,99€</span>
+        </p>
+    </div>
+
+    <!-- Ralph Lauren Jackets -->
+    <div class="product">
+        <img src="your_ralph_lauren_jacket_image_url.jpg" alt="Ralph Lauren Jacket">
+        <p>Ralph Lauren Jacket</p>
+        <p class="price">
+            <a href="https://www.paypal.com/pay?amount=14.99">14,99€</a>
+            <span class="original-price">26,99€</span>
+        </p>
+    </div>
+
+    <!-- Unlimited Pack -->
+    <div class="product">
+        <img src="your_unlimited_pack_image_url.jpg" alt="Unlimited Pack">
+        <p>Unlimited Pack</p>
+        <p class="price">
+            <a href="https://www.paypal.com/pay?amount=23.99">23,99€</a>
+            <span class="original-price">25,99€</span>
+        </p>
+    </div>
+</div>
+
+<div class="contact">
+    <p>Contact us on <a href="https://www.snapchat.com/add/YOUR_SNAPCHAT">Snapchat</a></p>
+</div>
+
+</body>
+</html>
