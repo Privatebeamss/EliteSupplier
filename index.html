@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exclusive Deals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #2c2c2c; /* Dark Gray Background */
@@ -37,8 +38,14 @@
             box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
             transition: transform 0.3s ease-in-out;
         }
+        .product a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
         .product:hover {
             transform: scale(1.05);
+            background: #454545;
         }
         .product img {
             width: 100%;
@@ -49,14 +56,15 @@
             color: #ff4d4d; /* Red Discount Price */
             font-weight: bold;
         }
-        .price a {
-            text-decoration: none;
-            color: #ff4d4d;
-        }
         .original-price {
             text-decoration: line-through;
             color: gray;
             font-size: 14px;
+        }
+        .supplier {
+            font-size: 14px;
+            color: #cfcfcf;
+            margin-top: 5px;
         }
         .contact {
             text-align: center;
@@ -76,76 +84,64 @@
 <body>
 
 <header>
-    <span>Exclusive Deals</span>
+    <span>🔥 Exclusive Deals</span>
     <span style="float:right; margin-right: 20px;">
-        <a href="https://www.snapchat.com/add/elitesupplier" style="color: white; text-decoration: none;">Contact Us</a>
+        <a href="https://www.snapchat.com/add/elitesupplier" style="color: white; text-decoration: none;">📩 Contact Us</a>
     </span>
 </header>
 
 <div class="product-container">
     <!-- AirPods -->
-    <div class="product">
+    <a href="https://www.paypal.com/pay?amount=12.99" class="product">
         <img src="https://www.alasil.ae/cdn/shop/files/MTJV3-Photoroom_1dd256ac-10d9-47a8-bd5a-d32bc027eb17.png?v=1738062919&width=1946" alt="AirPods">  
-        <p>AirPods</p>
-        <p class="price">
-            <a href="https://www.paypal.com/pay?amount=12.99">12,99€</a>
-            <span class="original-price">24,99€</span>
-        </p>
-    </div>
+        <p>🎧 AirPods</p>
+        <p class="supplier">Supplier: Elite Supplier</p>
+        <p class="price">12,99€ <span class="original-price">24,99€</span></p>
+    </a>
 
     <!-- LV Beanie -->
-    <div class="product">
+    <a href="https://www.paypal.com/pay?amount=12.99" class="product">
         <img src="https://prod-images.fashionphile.com/large/03551ff2354df3c694397bb4956d722e/2b6c379b12747a52cc891f1395cdd7d6.jpg" alt="LV Beanie">  
-        <p>Louis Vuitton Beanie</p>
-        <p class="price">
-            <a href="https://www.paypal.com/pay?amount=12.99">12,99€</a>
-            <span class="original-price">24,99€</span>
-        </p>
-    </div>
+        <p>🧢 Louis Vuitton Beanie</p>
+        <p class="supplier">Supplier: Elite Supplier</p>
+        <p class="price">12,99€ <span class="original-price">24,99€</span></p>
+    </a>
 
     <!-- Burberry Jackets/Vests -->
-    <div class="product">
+    <a href="https://www.paypal.com/pay?amount=14.99" class="product">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36JOAOs_k7SFHdZLhZgSXr5Sd83uz2uQiZw&s" alt="Burberry Jacket">  
-        <p>Burberry Jacket/Vest</p>
-        <p class="price">
-            <a href="https://www.paypal.com/pay?amount=14.99">14,99€</a>
-            <span class="original-price">26,99€</span>
-        </p>
-    </div>
+        <p>🧥 Burberry Jacket/Vest</p>
+        <p class="supplier">Supplier: Elite Supplier</p>
+        <p class="price">14,99€ <span class="original-price">26,99€</span></p>
+    </a>
 
     <!-- 1:1 Shoes -->
-    <div class="product">
+    <a href="https://www.paypal.com/pay?amount=20.99" class="product">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK-wFy892CK_Pub8V-nt9qHs-ETvBOCeewOg&s" alt="1:1 Shoes">  
-        <p>Replica Shoes (1:1)</p>
-        <p class="price">
-            <a href="https://www.paypal.com/pay?amount=20.99">20,99€</a>
-            <span class="original-price">29,99€</span>
-        </p>
-    </div>
+        <p>👟  Shoes </p>
+        <p class="supplier">Supplier: Elite Supplier</p>
+        <p class="price">20,99€ <span class="original-price">29,99€</span></p>
+    </a>
 
     <!-- Ralph Lauren Jackets -->
-    <div class="product">
+    <a href="https://www.paypal.com/pay?amount=14.99" class="product">
         <img src="https://www.lapinkids.com/media/catalog/product/cache/ba7c8bbaafe85f7687396de736ac9e84/2/3/23265119203_1_1702889267.jpg" alt="Ralph Lauren Jacket">  
-        <p>Ralph Lauren Jacket</p>
-        <p class="price">
-            <a href="https://www.paypal.com/pay?amount=14.99">14,99€</a>
-            <span class="original-price">26,99€</span>
-        </p>
-    </div>
+        <p>👔 Ralph Lauren Jacket</p>
+        <p class="supplier">Supplier: Elite Supplier</p>
+        <p class="price">14,99€ <span class="original-price">26,99€</span></p>
+    </a>
 
     <!-- Unlimited Pack -->
-    <div class="product">
+    <a href="https://www.paypal.com/pay?amount=23.99" class="product">
         <img src="https://qutopia.at/_nuxt/img/unlimited.f29127c.svg" alt="Unlimited Pack">  
-        <p>Unlimited Pack</p>
-        <p class="price">
-            <a href="https://www.paypal.com/pay?amount=23.99">23,99€</a>
-            <span class="original-price">25,99€</span>
-        </p>
-    </div>
+        <p>🔥 Unlimited Pack</p>
+        <p class="supplier">Supplier: Elite Supplier</p>
+        <p class="price">23,99€ <span class="original-price">25,99€</span></p>
+    </a>
 </div>
 
 <div class="contact">
-    <p>Contact us on <a href="https://www.snapchat.com/add/elitesupplier">Snapchat</a></p>
+    <p>📩 Contact us on <a href="https://www.snapchat.com/add/elitesupplier">Snapchat</a></p>
 </div>
 
 </body>
