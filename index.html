@@ -65,7 +65,7 @@
         .contact a {
             text-decoration: none;
             font-weight: bold;
-            color: #b3b3b3;
+            color: #b3b3b3; /* Changed link color */
         }
         /* Make the whole product box clickable */
         .product a {
@@ -83,6 +83,16 @@
             margin: 5px;
             border-radius: 10px;
         }
+        /* Ensuring all links remain gray */
+        a {
+            color: #b3b3b3;
+        }
+        a:visited {
+            color: #b3b3b3;
+        }
+        a:hover {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -90,7 +100,7 @@
 <header>
     <span>Exclusive Deals</span>
     <span style="float:right; margin-right: 20px;">
-        <a href="https://www.snapchat.com/add/elitesupplier" style="text-decoration: none;">Contact Us</a>
+        <a href="https://www.snapchat.com/add/elitesupplier">Contact Us</a>
     </span>
 </header>
 
